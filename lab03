@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualization Critique | Katherine Clavijo</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="lab02.html">Lab 2: AI Evaluation</a>
+            <a href="lab03.html" class="active">Lab 3: Visualization Critique</a>
+        </nav>
+        <h1>Visualization Critique</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Visualization</h2>
+            <figure>
+                <img src="images/mobile-internet-affordable.png"
+                     alt="Donut chart stating 95% of the global population lives in countries meeting a mobile internet affordability threshold, with icons for banking, health services, education, and public services.">
+                <figcaption>
+                    <strong>Title:</strong> Most of the World Can Now Afford Mobile Internet<br>
+                    <strong>Source:</strong>
+                    <a href="https://informationisbeautiful.net/beautifulnews/1148-afford-mobile-internet/" target="_blank" rel="noopener">
+                        Beautiful News (Information is Beautiful)
+                    </a>
+                </figcaption>
+            </figure>
+        </section>
+
+        <section>
+            <h2>Critique</h2>
+
+            <h3>Information Resolution</h3>
+            <p>
+                The message conveyed in this visualization is rather strong and positive: "Most of the World Can Now Afford Mobile Internet.
+                The design makes the point with a big donut chart and one statistic that is overwhelmingly predominant- "95 percent of the world population.
+                immediate. It also has a lesser supporting statement regarding the threshold applied: the price of 1 gigabyte of data does not exceed.
+                2% of average monthly income. The graphic is efficient, as it is easy to understand, read, and remember, on a glance. However,
+                with respect to the degree of thoroughness and completeness of the evidence, according to the conception of Edward Tufte of information resolution (as complete and detailed as possible), this is a fairly.
+                poor quality visualization of a complicated subject. It squeezes cost-effectiveness into one international headline figure without.
+                presenting the affordability distribution, the difference between countries, or the assumptions informing the result.
+            </p>
+            <p>
+                One of them is that viewer does not know which countries constitute the 95 percent, which countries are not considered, and how.
+                there are not far away many nations, close to the cutoff. When a country is close to the threshold, then that is significantly different than a.
+                country where data is much cheaper than 2% of income, and the chart is treating them equally. There is also no sense of
+                uncertainty: there is none of a range, a time trend or a sign of whether the number is increasing or not, whether it is stable or sensitive to different.
+                data plan choices. The visualization is conclusive, yet its measurement is probably conditional on decisions concerning.
+                which plans qualify as mobile internet, the sources of pricing, and measures of income.
+            </p>
+            <p>
+                The other critical issue of the resolution is that the definition of affordability is very low: 1GB per month and less than 2 percent of an average.
+                monthly income. It will be a handy point of reference, but the visualization suggests more extensive digital access than the indicator may.
+                guarantee. The icons around it (banking, health services, education, public services) indicate that affordability opens up.
+                critical necessities, but most actual applications and use cases will include video-based learning, telehealth sessions, massive app updates, and even.
+                day-to-day social communication- may need over 1GB in a month. The figure also fails to cover the cost of devices,
+                network stability, speed, dead zones, or internet proficiency. That is, the graphic is a synonym to affordable data available in a.
+                country" where people can access the internet in a meaningful manner, despite the fact that affordability is not the only obstacle.
+                The brief page text carries an optimistic story of progress, yet there is not sufficient visualization of the same.
+                Breadth to a viewer of determining the fullness of that assertion.
+            </p>
+
+            <h3>Effects without causes</h3>
+            <p>
+                The visualization primarily presents an outcome (a large number of countries satisfy an affordability metric) but not what.
+                produced that change. The textual support includes potential drivers like new national broadband strategies, expansion of
+                The 3G/4G coverage, number portability, and millions of people getting connected, at low prices. But these reasons are not exhibited.
+                as information, and the visual aid does not relate any particular policy or infrastructure changes with affordability performance.
+                The viewer is presented with a conclusion ("most can afford it now") but not the explanation trail that would assist in proving or otherwise.
+                understand the claim. Then there will be only a small additional side panel, e.g. a timeline of affordability change, a comparison.
+                among regions, or instances of significant changes in policy--would make resolution more effective and less of the effects without causes.
+                problem.
+            </p>
+
+            <h3>Overreaching</h3>
+            <p>
+                The headline and frame of the visualization are in danger of going beyond the data it supports.
+                population" is pronounced as almost an omnipresent right and the text putting internet as a contemporary human right is morally gratuitous.
+                weight which promotes consent. Nevertheless, the measure behind it is smaller: many countries are measuring up to a.
+                there is a specific affordability level of a small amount of data, not that people in those nations can receive trustworthy.
+                internet in practice. Inequality can be concealed in the average income; a scheme might be affordable in the eyes of the national averages but not still.
+                out of the reach of low-income households. Also, there is no visualization of whether affordability.
+                is indicative of competitive markets, temporary prices, restricted coverage or variation between urban and rural coverage.
+                It is a big conclusion the world can now the message is so confident and the visual is so clean.
+                can receive necessary services via mobile internet) more than evidences provided on the graphic can be justified.
+            </p>
+
+            <h3>Conclusion</h3>
+            <p>
+                Overall, this visualization succeeds as a shareable, high-impact summary of a positive trend: mobile internet is more
+                affordable in many parts of the world than it used to be. Its weakness, in Tufte’s terms, is low information resolution.
+                It offers a single headline statistic without the country-level detail, time context, assumptions, and limitations needed to
+                evaluate the claim carefully. To strengthen integrity while keeping clarity, the graphic could add a small list of countries
+                not meeting the threshold, a regional breakdown, a time trend showing change, and a brief note distinguishing
+                affordability from broader access (coverage, reliability, device cost, and meaningful data needs).
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Katherine Clavijo</p>
+    </footer>
+</body>
+</html>
