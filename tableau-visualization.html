@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Spotify Streaming Exploratory Data Analysis</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<nav>
+    <!-- Keep your existing navigation links here -->
+    <!-- Example:
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="lab04.html">Spotify Data Visualization</a></li>
+    </ul>
+    -->
+</nav>
+
+<h1>Spotify Streaming Exploratory Data Analysis (2013–2024)</h1>
+
+<section>
+    <h2>Interactive Visualization</h2>
+
+    <!-- Tableau Embed Code -->
+    <div class='tableauPlaceholder' id='viz1770864590898' style='position: relative'>
+        <noscript>
+            <a href='#'>
+                <img alt='Exploratory Data Analysis of Spotify Streaming Patterns (2013–2024)'
+                     src='https://public.tableau.com/static/images/Sp/SpotifyStreamingExploratoryDataAnalysis20132024/Dashboard1/1_rss.png'
+                     style='border: none' />
+            </a>
+        </noscript>
+        <object class='tableauViz' style='display:none;'>
+            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+            <param name='embed_code_version' value='3' />
+            <param name='site_root' value='' />
+            <param name='name' value='SpotifyStreamingExploratoryDataAnalysis20132024/Dashboard1' />
+            <param name='tabs' value='no' />
+            <param name='toolbar' value='yes' />
+            <param name='static_image' value='https://public.tableau.com/static/images/Sp/SpotifyStreamingExploratoryDataAnalysis20132024/Dashboard1/1.png' />
+            <param name='animate_transition' value='yes' />
+            <param name='display_static_image' value='yes' />
+            <param name='display_spinner' value='yes' />
+            <param name='display_overlay' value='yes' />
+            <param name='display_count' value='yes' />
+            <param name='language' value='en-US' />
+            <param name='filter' value='publish=yes' />
+        </object>
+    </div>
+
+    <script type='text/javascript'>
+        var divElement = document.getElementById('viz1770864590898');
+        var vizElement = divElement.getElementsByTagName('object')[0];
+        if (divElement.offsetWidth > 800) {
+            vizElement.style.width = '100%';
+            vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+        } else {
+            vizElement.style.width = '100%';
+            vizElement.style.height = '977px';
+        }
+        var scriptElement = document.createElement('script');
+        scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+        vizElement.parentNode.insertBefore(scriptElement, vizElement);
+    </script>
+</section>
+
+<section>
+    <h2>Reflection & Analysis</h2>
+
+    <p>
+    <strong>Data Preparation:</strong><br>
+     The data that was used to carry out the exploratory analysis was downloaded on Kaggle and includes specifics of the streaming history of Spotify that took place between 2013 and 2024. The first difficulty encountered during the process of uploading in Tableau public was the need to make sure that the field of time was aptly identified as date-time. Tableau also started with certain fields being text, whereas the data types required modification. Also, such calculated fields as the hour of the day extracted out of the timestamp were developed, which were needed to examine temporal listening patterns. Aside from these minor cleaning steps, the dataset was well formatted and required minimal preparation.
+    </p>
+
+    <p>
+    <strong>Design Choices:</strong><br>
+    The design of its visualization is aimed at three complementary visualizations: the long-term perspective, day-to-day behavior, and artist predominance. Annual streaming trends were presented in the form of a line chart, which is the most effective way of conveying the changes over time. The listening volume per hour distribution was selected in the form of a horizontal bar chart to effectively compare the volume of listening through the day. Lastly, a ranked bar chart is used to promote concentration and outliers by showing the top 10 artists based on the total streams. These design decisions are guided by simplicity, readability and analytical reporting.
+    </p>
+
+    <p>
+    <strong>Expected Patterns:</strong><br>
+    Before plotting the data, it was anticipated that the streaming activity of the Spotify would go up with time as the streaming platforms gained more receptiveness. Listening was also expected to flow at the most in daytime or evening when there is maximum user activity. It was also presumed that the modern or contemporary artists would take over the best artist ranking positions. The annual trend visualization proves that there indeed is a general increase in the streaming activity over the years, especially in the end of the 2010s, which confirms the fact of the increased platform usage.
+    </p>
+
+    <p>
+    <strong>Surprises and Outliers:</strong><br>
+    A number of unforeseen patterns were found in the visualizations. The significant spike in streaming activity in the period just before 2017 and the initial years of the pandemic was another surprising finding, after which there is an apparent drop. This implies that other factors outside listening behavior were playing a key role in the listening behavior such as lifestyle changes or world events. Moreover, the hourly distribution showed that there were high late-night listeners which do not coincide with the presumption that the daytime would be at the center. The most notable outlier is The Beatles in the chart of the Top 10 Artists, in which the band dominates all other artists. This catalogue engagement and longevity of replay over short-lived popularity are noted by this dominance.
+    </p>
+
+    <p>
+    <strong>Questions for Further Investigation:</strong><br>
+    These results bring up a number of issues to be investigated further. Which particular causes have led to the surge in streaming activity circa 2017? What is the impact of the global events, the COVID-19 pandemic, on daily listening habits? Why is the percentage of legacy artists such as The Beatles in terms of streaming data so high relative to other artists? The next step in research would be to divide the data by platform, demographics of users, or genre to learn more about these dynamics.
+    </p>
+
+    <p>
+    <strong>Tool Evaluation:</strong><br>
+    Tableau Public turned out to be an effective exploratory data analysis tool as it is easy to use through its user-friendly drag-and-drop interface, provides real-time visual response, and can process large volumes of data with minimum configuration. It has a strong side in its ability to allow the identification of patterns and outliers in a short time using interactive visualizations. Tableau Public, however, is limited in a number of ways such as limited data transformation capacities as compared to Python or R, which is a programming tool, and the fact that any published visualization must be open. Irrespective of these shortcomings, Tableau is a powerful visualization and storytelling tool, and it can be particularly useful in exploratory analysis and projects that are oriented at communication.
+    </p>
+
+</section>
+
+</body>
+</html>
