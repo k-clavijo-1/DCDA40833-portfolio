@@ -100,6 +100,44 @@ nav a:hover {
     background-color: var(--primary-color);
 }
 
+/* Hamburger menu button - hidden on desktop */
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.hamburger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+    transition: 0.3s;
+    border-radius: 3px;
+}
+
+/* When menu is active, animate hamburger lines */
+.hamburger.active span:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
 /* =========================
    Main Content
    ========================= */
@@ -383,18 +421,38 @@ footer a:hover {
 
     nav {
         font-size: 0.9rem;
+        position: relative;
     }
 
-    /* Stack navigation vertically on mobile */
+    /* Show hamburger menu button on mobile */
+    .hamburger {
+        display: block;
+    }
+
+    /* Hide menu by default on mobile */
     nav ul {
-        flex-direction: column;  /* Change from row to column */
-        align-items: center;     /* Center the stacked items */
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #3d1461;
+        flex-direction: column;  /* Stack vertically */
+        align-items: center;     /* Center the items */
+        padding: 1rem 0;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Show menu when active */
+    nav ul.active {
+        display: flex;
     }
 
     nav a {
         display: block;          /* Full width for easier tapping */
         width: 100%;
         text-align: center;
+        padding: 1rem;
     }
 
     main section {
@@ -418,4 +476,61 @@ footer a:hover {
         box-shadow: none;
         page-break-inside: avoid;
     }
+}
+/* =========================
+   Dark Mode (Lab 5 Toggle)
+   ========================= */
+
+/* I understand the logic: when body has .dark-mode, we override the theme variables */
+body.dark-mode {
+    --bg-color: #0f172a;          /* page background */
+    --text-color: #e2e8f0;        /* main text */
+    --text-secondary: #cbd5e1;    /* captions/secondary text */
+    --white: #111827;             /* replaces "white" surfaces like section cards */
+
+    /* Optional: tweak brand colors so they still look good on dark backgrounds */
+    --primary-color: #fb7185;
+    --secondary-color: #f43f5e;
+    --accent-color: #fbbf24;
+
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+/* I understand what this does: ensures cards/sections use the updated "surface" color */
+body.dark-mode main section {
+    background-color: var(--white);
+}
+
+/* I understand what this does: nav stays readable in dark mode */
+body.dark-mode nav {
+    background-color: #1f1b3a; /* similar to your purple, just darker */
+}
+
+/* I understand what this does: hover remains visible */
+body.dark-mode nav a:hover {
+    background-color: rgba(255, 255, 255, 0.12);
+}
+
+/* I understand what this does: footer matches dark theme */
+body.dark-mode footer {
+    background-color: #111827;
+}
+/* =========================
+   Dark Mode Toggle Button
+   ========================= */
+#themeToggle {
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: transform 0.15s ease, opacity 0.2s ease;
+}
+
+#themeToggle:hover {
+    opacity: 0.95;
+    transform: translateY(-1px);
 }
