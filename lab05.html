@@ -30,17 +30,18 @@
             <h2>Feature Overview</h2>
             <p>
                 I used AI assistance to implement a dark mode toggle using HTML, CSS, and JavaScript.
-                This feature allows users to switch between light and dark themes for accessibility
-                and user preference.
+                This will provide users with an option of light and dark themes, which will be convenient to use.
             </p>
         </section>
 
         <section>
             <h2>AI Collaboration</h2>
             <p>
-                AI generated the initial structure for the toggle and JavaScript logic.
-                I reviewed the code line by line, added comments, and modified colors and layout
-                to match my existing portfolio design.
+                The first structure was created by AI concerning the toggle and JavaScript logic.
+        I checked the code line by line, commented and changed colors and layout.
+        to be comparable to my current portfolio construction. Another application of AI that I did was as a debugging tool.
+        the feature did not fit well initially with my existing CSS and layout,
+        which assisted me in detecting and resolving the problems with style and structure.
             </p>
         </section>
 
@@ -67,8 +68,7 @@ Requirements:
             <p>
                 The code includes comments that reflect my level of understanding, ranging from
                 “I wrote this” to “I understand the logic but not the syntax yet.”
-                These comments document where I was confident in the implementation and where
-                I relied on AI explanations to improve my understanding.
+                These remarks are records of the points on which I had confidence in the execution and where. I used AI descriptions to get further insights.
             </p>
         </section>
 
@@ -76,7 +76,7 @@ Requirements:
             <h2>My AI Use Guidelines</h2>
             <ul>
                 <li>I use AI to generate starting points, not final answers</li>
-                <li>I do not commit code I cannot explain</li>
+                <li>I do not commit a code I cannot explain</li>
                 <li>I review and comment on all AI-generated code</li>
             </ul>
         </section>
@@ -85,14 +85,12 @@ Requirements:
             <h2>Demo</h2>
 
             <!-- I understand what this does: this button toggles dark mode -->
-            <button id="themeToggle" aria-label="Toggle dark mode">🌙 Dark Mode</button>
+            <button id="themeToggle" aria-label="Toggle dark mode"> Dark Mode</button>
 
             <p style="margin-top: 1rem;">
                 Click the button to switch themes. Refresh the page to confirm your preference
-                stays saved.
-            </p> <img src="images/Dark-mode-demo.png"
-         alt="Screenshot of Lab 5 showing dark mode enabled"
-         style="margin-top: 1rem; width: 100%;">
+                so it stays saved.
+            </p> 
          
         </section>
     </main>
@@ -110,14 +108,14 @@ Requirements:
         // I understand what this does: apply saved dark mode setting when the page loads
         if (savedTheme === "true") {
             document.body.classList.add("dark-mode");
-            toggleBtn.textContent = "☀️ Light Mode";
+            toggleBtn.textContent = " Light Mode";
         }
 
         // I understand the logic: clicking toggles the class and saves the preference
         toggleBtn.addEventListener("click", () => {
             const isDark = document.body.classList.toggle("dark-mode");
             localStorage.setItem("darkMode", isDark);
-            toggleBtn.textContent = isDark ? "☀️ Light Mode" : "🌙 Dark Mode";
+            toggleBtn.textContent = isDark ? " Light Mode" : " Dark Mode";
         });
     </script>
 </body>
