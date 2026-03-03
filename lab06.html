@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab 6 | Katherine Clavijo</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<h2>Interactive Hometown Map</h2>
+<p>
+  <a href="hometown_map.html" target="_blank">
+    Click here to open my interactive hometown map
+  </a>
+</p>
+<h2>Lab 6 Reflection</h2>
+
+<h3>Design Inspiration</h3>
+<p>
+For my custom basemap, I was inspired by earthy tones and a minimalist aesthetic. I wanted the map to feel calm, grounded, and visually balanced rather than overly bright or cluttered. Growing up in Ecuador, I associate the landscape with muted greens, soft browns, and natural textures, so I tried to reflect that feeling in the land and water colors. Instead of using default Mapbox styling, I adjusted each layer to create a softer, more cohesive palette. I kept the design minimal by reducing unnecessary visual noise and limiting strong contrasts. My goal was for the map to feel intentional and subtle, almost like a clean design piece rather than just a functional navigation tool.
+</p>
+
+<h3>Cartographic Challenges</h3>
+<p>
+One of the main challenges I faced was designing the basemap so it worked well at multiple zoom levels. When too many roads and labels appeared at once, the map quickly felt overwhelming. I had to think carefully about what information should appear at smaller scales versus when a user zooms in. At lower zoom levels, I simplified features and reduced label density to maintain clarity. At higher zoom levels, I allowed more detail to appear so the map became more informative locally. This process helped me understand map generalization more clearly — good cartography is not just about adding information, but about controlling visual hierarchy and deciding what is essential at each scale.
+</p>
+
+<h3>Technical Challenges</h3>
+<p>
+The technical portion of the project required patience, especially when geocoding addresses and integrating my custom Mapbox style into Python using Folium. Some addresses initially returned incorrect or duplicate coordinates, so I had to refine formatting and adjust the geocoding parameters. Debugging API requests and making sure my Mapbox access token worked correctly were also small but important steps. I used AI tools to help structure parts of the Python script and troubleshoot errors, but I made sure I understood what each section was doing — from reading the CSV file to generating pop-ups with images and descriptions. Overall, this lab helped me see how creative design decisions and technical coding work together to produce an interactive, polished digital map.
+</p>
