@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_ab73b0c8f0bfae0f83718c1085320a03 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_ab73b0c8f0bfae0f83718c1085320a03" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_ab73b0c8f0bfae0f83718c1085320a03 = L.map(
+                "map_ab73b0c8f0bfae0f83718c1085320a03",
+                {
+                    center: [-0.17905325000000002, -78.48840316666669],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_f694e64905cd6b15c550cabcc2b43403 = L.tileLayer(
+                "https://api.mapbox.com/styles/v1/kclavijo1/cmm82goq900mk01s5cagud9g5/tiles/256/{z}/{x}/{y}@2x?access_token=pk.eyJ1Ijoia2NsYXZpam8xIiwiYSI6ImNtbWJjbnphczBuY3EycXBzN2d3ODR1bzQifQ.-hS8Y4DRAp6qdxX3CXSIbQ",
+                {
+  "minZoom": 0,
+  "maxZoom": 18,
+  "maxNativeZoom": 18,
+  "noWrap": false,
+  "attribution": "Mapbox",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+  "tileSize": 512,
+  "zoomOffset": -1,
+}
+
+            );
+        
+    
+            tile_layer_f694e64905cd6b15c550cabcc2b43403.addTo(map_ab73b0c8f0bfae0f83718c1085320a03);
+        
+    
+            var marker_49d931d3ab1ec2d4ae99e7f0adfbbc5b = L.marker(
+                [-0.175387, -78.497257],
+                {
+}
+            ).addTo(map_ab73b0c8f0bfae0f83718c1085320a03);
+        
+    
+            var icon_8d4384f813f3a4cd0f70f2bb04372427 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8163b677a9809b6018a1c887c8b60356 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6409183f9a618f4600ca0ff1c659f62e = $(`<div id="html_6409183f9a618f4600ca0ff1c659f62e" style="width: 100.0%; height: 100.0%;">     <div style="width:260px;">       <div style="font-weight:700; font-size:14px; margin-bottom:6px;">Hasta La Vuelta Señor</div>       <div style="font-size:12px; line-height:1.35; margin-bottom:8px;">A classic spot in the historic center that feels like a window into traditional Quito. It’s the kind of place where you can truly experience Ecuadorian flavors in an authentic setting.</div>       <img src="http://hastalavuelta.com/wp-content/uploads/2015/04/centrohlvs-1.jpg" style="width:100%; border-radius:10px; margin-bottom:6px;" />       <div style="font-size:11px; color:#555;"><b>Type:</b> Restaurant</div>     </div>     </div>`)[0];
+                popup_8163b677a9809b6018a1c887c8b60356.setContent(html_6409183f9a618f4600ca0ff1c659f62e);
+            
+        
+
+        marker_49d931d3ab1ec2d4ae99e7f0adfbbc5b.bindPopup(popup_8163b677a9809b6018a1c887c8b60356)
+        ;
+
+        
+    
+    
+            marker_49d931d3ab1ec2d4ae99e7f0adfbbc5b.bindTooltip(
+                `<div>
+                     Hasta La Vuelta Señor
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_49d931d3ab1ec2d4ae99e7f0adfbbc5b.setIcon(icon_8d4384f813f3a4cd0f70f2bb04372427);
+            
+    
+            var marker_db2f5962d608d029dec46088b65aa24a = L.marker(
+                [-0.175387, -78.497257],
+                {
+}
+            ).addTo(map_ab73b0c8f0bfae0f83718c1085320a03);
+        
+    
+            var icon_a8edab87ee4eb8560474b6bea6b7cda6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ee0580ec789d1b66f97aa96e0c0c4407 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_bdd96d2fd3f9348baa44174a9f07a043 = $(`<div id="html_bdd96d2fd3f9348baa44174a9f07a043" style="width: 100.0%; height: 100.0%;">     <div style="width:260px;">       <div style="font-weight:700; font-size:14px; margin-bottom:6px;">Casa Gangotena Restaurant</div>       <div style="font-size:12px; line-height:1.35; margin-bottom:8px;">A refined take on Ecuadorian cuisine located in Plaza San Francisco. I associate this place with special occasions and showing visitors a more elegant side of Quito.</div>       <img src="https://www.casagangotena.com/wp-content/uploads/2023/09/chocolate-tasting-casa-gangotena.webp" style="width:100%; border-radius:10px; margin-bottom:6px;" />       <div style="font-size:11px; color:#555;"><b>Type:</b> Restaurant</div>     </div>     </div>`)[0];
+                popup_ee0580ec789d1b66f97aa96e0c0c4407.setContent(html_bdd96d2fd3f9348baa44174a9f07a043);
+            
+        
+
+        marker_db2f5962d608d029dec46088b65aa24a.bindPopup(popup_ee0580ec789d1b66f97aa96e0c0c4407)
+        ;
+
+        
+    
+    
+            marker_db2f5962d608d029dec46088b65aa24a.bindTooltip(
+                `<div>
+                     Casa Gangotena Restaurant
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_db2f5962d608d029dec46088b65aa24a.setIcon(icon_a8edab87ee4eb8560474b6bea6b7cda6);
+            
+    
+            var marker_a93f6744eabcc2cf045808d257717261 = L.marker(
+                [-0.197845, -78.486167],
+                {
+}
+            ).addTo(map_ab73b0c8f0bfae0f83718c1085320a03);
+        
+    
+            var icon_60d686455bc3f517457e27eb9e9919e0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fe461c9f961db36ca803356801dc21c9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3b2037d98db22f1aa40db2072c77d10e = $(`<div id="html_3b2037d98db22f1aa40db2072c77d10e" style="width: 100.0%; height: 100.0%;">     <div style="width:260px;">       <div style="font-weight:700; font-size:14px; margin-bottom:6px;">Zazu</div>       <div style="font-size:12px; line-height:1.35; margin-bottom:8px;">One of Quito’s most recognized modern restaurants, blending local ingredients with international techniques. It represents how Ecuadorian cuisine has evolved.</div>       <img src="https://zazuquito.com/wp-content/uploads/2021/04/cropped-logozazu.jpg" style="width:100%; border-radius:10px; margin-bottom:6px;" />       <div style="font-size:11px; color:#555;"><b>Type:</b> Restaurant</div>     </div>     </div>`)[0];
+                popup_fe461c9f961db36ca803356801dc21c9.setContent(html_3b2037d98db22f1aa40db2072c77d10e);
+            
+        
+
+        marker_a93f6744eabcc2cf045808d257717261.bindPopup(popup_fe461c9f961db36ca803356801dc21c9)
+        ;
+
+        
+    
+    
+            marker_a93f6744eabcc2cf045808d257717261.bindTooltip(
+                `<div>
+                     Zazu
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a93f6744eabcc2cf045808d257717261.setIcon(icon_60d686455bc3f517457e27eb9e9919e0);
+            
+    
+            var marker_6a21f76eca2c3ebecf10feb434fbf10e = L.marker(
+                [-0.164856, -78.480847],
+                {
+}
+            ).addTo(map_ab73b0c8f0bfae0f83718c1085320a03);
+        
+    
+            var icon_b709b758a19010824796bb6e193bdfe5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_00e36c15072569e012ba9dc7632e7b46 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e01b1cbdafe4621b56a9bb492aa3eb7b = $(`<div id="html_e01b1cbdafe4621b56a9bb492aa3eb7b" style="width: 100.0%; height: 100.0%;">     <div style="width:260px;">       <div style="font-weight:700; font-size:14px; margin-bottom:6px;">Somos Ecuador Restaurante</div>       <div style="font-size:12px; line-height:1.35; margin-bottom:8px;">A restaurant focused on celebrating Ecuadorian identity through food. I would take someone here to understand Ecuadorian culture beyond tourism.</div>       <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1c/c9/62/68/somos.jpg?w=1400&h=-1&s=1" style="width:100%; border-radius:10px; margin-bottom:6px;" />       <div style="font-size:11px; color:#555;"><b>Type:</b> Restaurant</div>     </div>     </div>`)[0];
+                popup_00e36c15072569e012ba9dc7632e7b46.setContent(html_e01b1cbdafe4621b56a9bb492aa3eb7b);
+            
+        
+
+        marker_6a21f76eca2c3ebecf10feb434fbf10e.bindPopup(popup_00e36c15072569e012ba9dc7632e7b46)
+        ;
+
+        
+    
+    
+            marker_6a21f76eca2c3ebecf10feb434fbf10e.bindTooltip(
+                `<div>
+                     Somos Ecuador Restaurante
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6a21f76eca2c3ebecf10feb434fbf10e.setIcon(icon_b709b758a19010824796bb6e193bdfe5);
+            
+    
+            var marker_fe36570d84b7c6178646f121a27a4767 = L.marker(
+                [-0.206344, -78.485503],
+                {
+}
+            ).addTo(map_ab73b0c8f0bfae0f83718c1085320a03);
+        
+    
+            var icon_1cfffcad85014fa8e2de32eabbade892 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a0d78513102e7d498b04d7d0ea5702ec = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_474395c9a0742d62fd65fb4745d5526e = $(`<div id="html_474395c9a0742d62fd65fb4745d5526e" style="width: 100.0%; height: 100.0%;">     <div style="width:260px;">       <div style="font-weight:700; font-size:14px; margin-bottom:6px;">El Ventanal</div>       <div style="font-size:12px; line-height:1.35; margin-bottom:8px;">A traditional restaurant I connect with family meals and comfort food. The flavors feel familiar and represent everyday Ecuadorian cuisine.</div>       <img src="https://static.wixstatic.com/media/a81cf8_f7720e3f021c48caaa147199263578e4f003.jpg/v1/fill/w_600,h_600,q_90,enc_avif,quality_auto/a81cf8_f7720e3f021c48caaa147199263578e4f003.jpg" style="width:100%; border-radius:10px; margin-bottom:6px;" />       <div style="font-size:11px; color:#555;"><b>Type:</b> Restaurant</div>     </div>     </div>`)[0];
+                popup_a0d78513102e7d498b04d7d0ea5702ec.setContent(html_474395c9a0742d62fd65fb4745d5526e);
+            
+        
+
+        marker_fe36570d84b7c6178646f121a27a4767.bindPopup(popup_a0d78513102e7d498b04d7d0ea5702ec)
+        ;
+
+        
+    
+    
+            marker_fe36570d84b7c6178646f121a27a4767.bindTooltip(
+                `<div>
+                     El Ventanal
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_fe36570d84b7c6178646f121a27a4767.setIcon(icon_1cfffcad85014fa8e2de32eabbade892);
+            
+    
+            var marker_622b88f6ff17a5f0d48f1513543baa8c = L.marker(
+                [-0.220665, -78.503212],
+                {
+}
+            ).addTo(map_ab73b0c8f0bfae0f83718c1085320a03);
+        
+    
+            var icon_1c0e7d0997f0c54f29ee1dc47bff629a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b002d46616f6262d6ef9a8a004d750cf = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c44e320729130c04ac64df2cc6c3915d = $(`<div id="html_c44e320729130c04ac64df2cc6c3915d" style="width: 100.0%; height: 100.0%;">     <div style="width:260px;">       <div style="font-weight:700; font-size:14px; margin-bottom:6px;">Café Mosaico</div>       <div style="font-size:12px; line-height:1.35; margin-bottom:8px;">A modern café known for its city views. I associate this place with spending time with friends and enjoying Quito from above.</div>       <img src="https://cafemosaicoecuador.com/wp-content/uploads/2019/07/Cafe-Mosaico-Quito-8-768x511.jpg" style="width:100%; border-radius:10px; margin-bottom:6px;" />       <div style="font-size:11px; color:#555;"><b>Type:</b> Restaurant</div>     </div>     </div>`)[0];
+                popup_b002d46616f6262d6ef9a8a004d750cf.setContent(html_c44e320729130c04ac64df2cc6c3915d);
+            
+        
+
+        marker_622b88f6ff17a5f0d48f1513543baa8c.bindPopup(popup_b002d46616f6262d6ef9a8a004d750cf)
+        ;
+
+        
+    
+    
+            marker_622b88f6ff17a5f0d48f1513543baa8c.bindTooltip(
+                `<div>
+                     Café Mosaico
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_622b88f6ff17a5f0d48f1513543baa8c.setIcon(icon_1c0e7d0997f0c54f29ee1dc47bff629a);
+            
+    
+            var marker_cf743a99d419213be07da3be6b6490b5 = L.marker(
+                [-0.167159, -78.488807],
+                {
+}
+            ).addTo(map_ab73b0c8f0bfae0f83718c1085320a03);
+        
+    
+            var icon_75cd086eff44ae31fb4791794c89a8c9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c5b62ef02f8ad5bce3bae743847315e3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a59bfc385437c5805ee6e27b27d5bc64 = $(`<div id="html_a59bfc385437c5805ee6e27b27d5bc64" style="width: 100.0%; height: 100.0%;">     <div style="width:260px;">       <div style="font-weight:700; font-size:14px; margin-bottom:6px;">Chez Jérôme</div>       <div style="font-size:12px; line-height:1.35; margin-bottom:8px;">A contemporary restaurant that blends international flavors with a local atmosphere. It reflects the modern side of Quito’s food scene.</div>       <img src="https://www.chezjeromerestaurante.com/wp-content/uploads/2017/01/logo.png" style="width:100%; border-radius:10px; margin-bottom:6px;" />       <div style="font-size:11px; color:#555;"><b>Type:</b> Restaurant</div>     </div>     </div>`)[0];
+                popup_c5b62ef02f8ad5bce3bae743847315e3.setContent(html_a59bfc385437c5805ee6e27b27d5bc64);
+            
+        
+
+        marker_cf743a99d419213be07da3be6b6490b5.bindPopup(popup_c5b62ef02f8ad5bce3bae743847315e3)
+        ;
+
+        
+    
+    
+            marker_cf743a99d419213be07da3be6b6490b5.bindTooltip(
+                `<div>
+                     Chez Jérôme
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_cf743a99d419213be07da3be6b6490b5.setIcon(icon_75cd086eff44ae31fb4791794c89a8c9);
+            
+    
+            var marker_334df2a06c51d8dd0fd291a687333b20 = L.marker(
+                [-0.138277, -78.462565],
+                {
+}
+            ).addTo(map_ab73b0c8f0bfae0f83718c1085320a03);
+        
+    
+            var icon_5f35bb384a710a9e2540e7855826d033 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fe6f76d640a39e7296ebc263cbb7a5fc = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d077578a7577e74a208bf87c66bfeaa6 = $(`<div id="html_d077578a7577e74a208bf87c66bfeaa6" style="width: 100.0%; height: 100.0%;">     <div style="width:260px;">       <div style="font-weight:700; font-size:14px; margin-bottom:6px;">La Ronda Restaurante</div>       <div style="font-size:12px; line-height:1.35; margin-bottom:8px;">Located on one of Quito’s most iconic streets, this restaurant connects food with history and tradition.</div>       <img src="https://webbox.imgix.net/images/vqbqxfofabspmjxw/367d7635-a7ff-4819-8e76-39dfa0f2dd8d.jpg?auto=format,compress&fit=crop&crop=entropy" style="width:100%; border-radius:10px; margin-bottom:6px;" />       <div style="font-size:11px; color:#555;"><b>Type:</b> Restaurant</div>     </div>     </div>`)[0];
+                popup_fe6f76d640a39e7296ebc263cbb7a5fc.setContent(html_d077578a7577e74a208bf87c66bfeaa6);
+            
+        
+
+        marker_334df2a06c51d8dd0fd291a687333b20.bindPopup(popup_fe6f76d640a39e7296ebc263cbb7a5fc)
+        ;
+
+        
+    
+    
+            marker_334df2a06c51d8dd0fd291a687333b20.bindTooltip(
+                `<div>
+                     La Ronda Restaurante
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_334df2a06c51d8dd0fd291a687333b20.setIcon(icon_5f35bb384a710a9e2540e7855826d033);
+            
+    
+            var marker_14fdf4e6de854e8ad42c71b2cd537ed7 = L.marker(
+                [-0.201785, -78.482916],
+                {
+}
+            ).addTo(map_ab73b0c8f0bfae0f83718c1085320a03);
+        
+    
+            var icon_457304bd8ac31cdd3f85ca5886d69592 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ae2a8f9184b51dfa8fb6ecb50db0a843 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2fd6a8dc757ec77c696061c7eda60038 = $(`<div id="html_2fd6a8dc757ec77c696061c7eda60038" style="width: 100.0%; height: 100.0%;">     <div style="width:260px;">       <div style="font-weight:700; font-size:14px; margin-bottom:6px;">Urko Cocina Local</div>       <div style="font-size:12px; line-height:1.35; margin-bottom:8px;">A restaurant focused on local ingredients and sustainability, showing a modern and thoughtful approach to Ecuadorian cuisine.</div>       <img src="https://urko.rest/es/" style="width:100%; border-radius:10px; margin-bottom:6px;" />       <div style="font-size:11px; color:#555;"><b>Type:</b> Restaurant</div>     </div>     </div>`)[0];
+                popup_ae2a8f9184b51dfa8fb6ecb50db0a843.setContent(html_2fd6a8dc757ec77c696061c7eda60038);
+            
+        
+
+        marker_14fdf4e6de854e8ad42c71b2cd537ed7.bindPopup(popup_ae2a8f9184b51dfa8fb6ecb50db0a843)
+        ;
+
+        
+    
+    
+            marker_14fdf4e6de854e8ad42c71b2cd537ed7.bindTooltip(
+                `<div>
+                     Urko Cocina Local
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_14fdf4e6de854e8ad42c71b2cd537ed7.setIcon(icon_457304bd8ac31cdd3f85ca5886d69592);
+            
+    
+            var marker_d3ed3310f52e447bdcc725e268768cf8 = L.marker(
+                [-0.145538, -78.491607],
+                {
+}
+            ).addTo(map_ab73b0c8f0bfae0f83718c1085320a03);
+        
+    
+            var icon_f099820299c4bed6c6411f0c6b7bc89b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9e3371a56216cbc048338dc481663c6b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e81ffdb3e1224252ae152bed6ab9144c = $(`<div id="html_e81ffdb3e1224252ae152bed6ab9144c" style="width: 100.0%; height: 100.0%;">     <div style="width:260px;">       <div style="font-weight:700; font-size:14px; margin-bottom:6px;">Fankør</div>       <div style="font-size:12px; line-height:1.35; margin-bottom:8px;">A modern and experimental restaurant that highlights creativity and global influences within Quito’s dining scene.</div>       <img src="https://images.squarespace-cdn.com/content/v1/54513603e4b0f75960c636a7/1655775286696-OUFLKI7AEM2CRIP66RLC/FANKOR-17.jpg?format=1500w" style="width:100%; border-radius:10px; margin-bottom:6px;" />       <div style="font-size:11px; color:#555;"><b>Type:</b> Restaurant</div>     </div>     </div>`)[0];
+                popup_9e3371a56216cbc048338dc481663c6b.setContent(html_e81ffdb3e1224252ae152bed6ab9144c);
+            
+        
+
+        marker_d3ed3310f52e447bdcc725e268768cf8.bindPopup(popup_9e3371a56216cbc048338dc481663c6b)
+        ;
+
+        
+    
+    
+            marker_d3ed3310f52e447bdcc725e268768cf8.bindTooltip(
+                `<div>
+                     Fankør
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d3ed3310f52e447bdcc725e268768cf8.setIcon(icon_f099820299c4bed6c6411f0c6b7bc89b);
+            
+    
+            var marker_f8d49a0ffa3f9ea0952c9773a27881f7 = L.marker(
+                [-0.209858, -78.493093],
+                {
+}
+            ).addTo(map_ab73b0c8f0bfae0f83718c1085320a03);
+        
+    
+            var icon_07718412a9cf1b7a871e087270af1dbd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_130c82caf9a551ddc4293e398938f745 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ebcc09fdff54c46b7c6712a3889c457b = $(`<div id="html_ebcc09fdff54c46b7c6712a3889c457b" style="width: 100.0%; height: 100.0%;">     <div style="width:260px;">       <div style="font-weight:700; font-size:14px; margin-bottom:6px;">Pavarotti Restaurant</div>       <div style="font-size:12px; line-height:1.35; margin-bottom:8px;">A well-known restaurant in Quito offering Italian cuisine with a warm, classic atmosphere. It’s a place I associate with long dinners and celebrating special moments.</div>       <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/16/24/d6/54/pavarotti.jpg?w=1400&h=800&s=1" style="width:100%; border-radius:10px; margin-bottom:6px;" />       <div style="font-size:11px; color:#555;"><b>Type:</b> Restaurant</div>     </div>     </div>`)[0];
+                popup_130c82caf9a551ddc4293e398938f745.setContent(html_ebcc09fdff54c46b7c6712a3889c457b);
+            
+        
+
+        marker_f8d49a0ffa3f9ea0952c9773a27881f7.bindPopup(popup_130c82caf9a551ddc4293e398938f745)
+        ;
+
+        
+    
+    
+            marker_f8d49a0ffa3f9ea0952c9773a27881f7.bindTooltip(
+                `<div>
+                     Pavarotti Restaurant
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f8d49a0ffa3f9ea0952c9773a27881f7.setIcon(icon_07718412a9cf1b7a871e087270af1dbd);
+            
+    
+            var marker_fddce9a03521546dd53f42c79b2aa1f2 = L.marker(
+                [-0.145538, -78.491607],
+                {
+}
+            ).addTo(map_ab73b0c8f0bfae0f83718c1085320a03);
+        
+    
+            var icon_4e52ba58c223c85557cbbc8f48ab26a4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4b58797e74f6a7254d3a96cc05346bb8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c36aa4193515d3ce4ea2fd4a99178b92 = $(`<div id="html_c36aa4193515d3ce4ea2fd4a99178b92" style="width: 100.0%; height: 100.0%;">     <div style="width:260px;">       <div style="font-weight:700; font-size:14px; margin-bottom:6px;">Marenostrum</div>       <div style="font-size:12px; line-height:1.35; margin-bottom:8px;">A modern restaurant focused on seafood and Mediterranean flavors. I like coming here when I want something different and a more upscale dining experience.</div>       <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/ef/79/b0/el-mar-a-tu-altura.jpg?w=1400&h=800&s=1" style="width:100%; border-radius:10px; margin-bottom:6px;" />       <div style="font-size:11px; color:#555;"><b>Type:</b> Restaurant</div>     </div>     </div>`)[0];
+                popup_4b58797e74f6a7254d3a96cc05346bb8.setContent(html_c36aa4193515d3ce4ea2fd4a99178b92);
+            
+        
+
+        marker_fddce9a03521546dd53f42c79b2aa1f2.bindPopup(popup_4b58797e74f6a7254d3a96cc05346bb8)
+        ;
+
+        
+    
+    
+            marker_fddce9a03521546dd53f42c79b2aa1f2.bindTooltip(
+                `<div>
+                     Marenostrum
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_fddce9a03521546dd53f42c79b2aa1f2.setIcon(icon_4e52ba58c223c85557cbbc8f48ab26a4);
+            
+    
+            var layer_control_579ec8ae2090bb8f303e11af3f5ba5f9_layers = {
+                base_layers : {
+                    "My custom basemap" : tile_layer_f694e64905cd6b15c550cabcc2b43403,
+                },
+                overlays :  {
+                },
+            };
+            let layer_control_579ec8ae2090bb8f303e11af3f5ba5f9 = L.control.layers(
+                layer_control_579ec8ae2090bb8f303e11af3f5ba5f9_layers.base_layers,
+                layer_control_579ec8ae2090bb8f303e11af3f5ba5f9_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": true,
+  "autoZIndex": true,
+}
+            ).addTo(map_ab73b0c8f0bfae0f83718c1085320a03);
+
+        
+</script>
+</html>

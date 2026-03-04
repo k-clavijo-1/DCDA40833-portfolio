@@ -12,7 +12,7 @@ import folium
 # ============================================================
 
 
-MAPBOX_TOKEN = "pk.eyJ1Ijoia2NsYXZpam8xIiwiYSI6ImNtbHRwcHpnZjAydHQzaXEyemYybWpmM2cifQ.8LL88HyDwD8Icfbgpsk86g"
+MAPBOX_TOKEN = "pk.eyJ1Ijoia2NsYXZpam8xIiwiYSI6ImNtbWJjbnphczBuY3EycXBzN2d3ODR1bzQifQ.-hS8Y4DRAp6qdxX3CXSIbQ"
 MAPBOX_STYLE = "mapbox://styles/kclavijo1/cmm82goq900mk01s5cagud9g5"
 
 QUITO_PROXIMITY = "-78.4678,-0.1807"     
@@ -141,12 +141,15 @@ def main():
     center_lon = df["Lon"].mean()
 
     m = folium.Map(location=[center_lat, center_lon], zoom_start=12, tiles=None)
-
+    
     folium.TileLayer(
-        tiles=tiles_url,
-        attr="Mapbox",
-        name="My custom basemap"
-    ).add_to(m)
+    tiles=tiles_url,
+    attr="Mapbox",
+    name="My custom basemap",
+    tile_size=512,
+    zoom_offset=-1,
+    max_zoom=18
+).add_to(m)
 
     # 4) add markers
     for _, row in df.iterrows():
@@ -168,7 +171,7 @@ def main():
     folium.LayerControl().add_to(m)
 
     # 5) save the HTML
-    out_file = "hometown_map.html"
+    out_file = "lab6/hometown_map.html"
     m.save(out_file)
     print(f"\nDONE ✅ Open this file in your browser: {out_file}")
 
