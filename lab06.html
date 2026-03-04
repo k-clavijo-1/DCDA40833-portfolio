@@ -2,34 +2,81 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Lab 6 | Katherine Clavijo</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lab 6: Interactive Hometown Map | Katherine Clavijo</title>
 <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
 
+<header>
+<nav>
+<button class="hamburger" aria-label="Toggle navigation menu">
+<span></span>
+<span></span>
+<span></span>
+</button>
+
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="lab02.html">Lab 2: AI Evaluation</a></li>
+<li><a href="lab03.html">Lab 3: Visualization Critique</a></li>
+<li><a href="tableau-visualization.html">Tableau Viz</a></li>
+<li><a href="lab05.html">Lab 5: Vibe Coding</a></li>
+<li><a href="lab06.html" class="active">Lab 6: Hometown Map</a></li>
+</ul>
+</nav>
+
+<h1>Lab 6: Interactive Hometown Map</h1>
+</header>
+
+<main>
+
+<section>
 <h2>Interactive Hometown Map</h2>
+
+<p>
+This map highlights several restaurants and places that represent my hometown of Quito, Ecuador. Each location includes a short description and an image so that users can explore the places in a more visual and interactive way.
+</p>
 
 <p>
 <a href="lab6/hometown_map.html" target="_blank">
 Click here to open my interactive hometown map
 </a>
 </p>
+</section>
+
+<section>
+
 <h2>Lab 6 Reflection</h2>
 
 <h3>Design Inspiration</h3>
+
 <p>
-For my custom basemap, I was inspired by earthy tones and a minimalist aesthetic. I wanted the map to feel calm, grounded, and visually balanced rather than overly bright or cluttered. Growing up in Ecuador, I associate the landscape with muted greens, soft browns, and natural textures, so I tried to reflect that feeling in the land and water colors. Instead of using default Mapbox styling, I adjusted each layer to create a softer, more cohesive palette. I kept the design minimal by reducing unnecessary visual noise and limiting strong contrasts. My goal was for the map to feel intentional and subtle, almost like a clean design piece rather than just a functional navigation tool.
+For my custom basemap, I wanted the map to feel simple and calm rather than overly bright or busy. I chose earthy colors because they remind me of the landscapes around Quito, Ecuador. Growing up there, I associate the environment with muted greens, warm browns, and natural textures, so I tried to reflect that feeling in the land and water colors of the map. Instead of keeping the default Mapbox style, I adjusted different layers to create a softer color palette that felt more cohesive. I also tried to keep the map minimal so the markers and locations would stand out without too much visual clutter.
 </p>
 
 <h3>Cartographic Challenges</h3>
+
 <p>
-One of the main challenges I faced was designing the basemap so it worked well at multiple zoom levels. When too many roads and labels appeared at once, the map quickly felt overwhelming. I had to think carefully about what information should appear at smaller scales versus when a user zooms in. At lower zoom levels, I simplified features and reduced label density to maintain clarity. At higher zoom levels, I allowed more detail to appear so the map became more informative locally. This process helped me understand map generalization more clearly — good cartography is not just about adding information, but about controlling visual hierarchy and deciding what is essential at each scale.
+One challenge I faced while designing the map was making sure it worked well at different zoom levels. When too many roads, labels, and details appeared at once, the map quickly started to feel overwhelming. I had to think about what information should be visible when users are zoomed out versus when they zoom in closer to the city. At lower zoom levels I reduced the amount of detail so the map stayed readable. At higher zoom levels I allowed more information to appear so users could explore specific neighborhoods more clearly. This process helped me understand how cartographers decide what information is important at different scales.
 </p>
 
 <h3>Technical Challenges</h3>
+
 <p>
-The technical portion of the project required patience, especially when geocoding addresses and integrating my custom Mapbox style into Python using Folium. Some addresses initially returned incorrect or duplicate coordinates, so I had to refine formatting and adjust the geocoding parameters. Debugging API requests and making sure my Mapbox access token worked correctly were also small but important steps. I used AI tools to help structure parts of the Python script and troubleshoot errors, but I made sure I understood what each section was doing — from reading the CSV file to generating pop-ups with images and descriptions. Overall, this lab helped me see how creative design decisions and technical coding work together to produce an interactive, polished digital map.
+The technical side of this project involved working with Python and Folium to generate the interactive map. One of the main steps was geocoding the restaurant addresses so they could be converted into latitude and longitude coordinates. Some of the addresses initially returned incorrect or duplicate locations, so I had to adjust how they were formatted in the CSV file. I also had to connect my custom Mapbox style to the Python script so the basemap would load correctly. Troubleshooting the API requests and verifying that the Mapbox token was working took some time, but it helped me better understand how mapping tools interact with external services. Overall, this lab helped me see how design decisions and coding work together to create an interactive map.
 </p>
+
+</section>
+
+</main>
+
+<footer>
+<p>© 2026 Katherine Clavijo</p>
+</footer>
+
+<script src="js/hamburger.js"></script>
+
 </body>
 </html>
