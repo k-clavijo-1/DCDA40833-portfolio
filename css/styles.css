@@ -7,7 +7,7 @@
    CSS Variables (Color Scheme)
    ========================= */
 :root {
-   --primary-color: #9f1239;
+--primary-color: #9f1239;
 --secondary-color: #f43f5e;
 --accent-color: #fbbf24;
 
@@ -30,6 +30,7 @@ html {
     scroll-behavior: smooth;       /* Smooth scrolling for anchor links */
 }
 
+/* Sets the main font, text color, and background color for the whole site */
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
     line-height: 1.6;
@@ -166,6 +167,7 @@ main section h2 {
     font-size: 1.875rem;
 }
 
+/* Styles smaller headings inside each section */
 main section h3 {
     color: var(--text-color);
     margin-top: 1.5rem;
@@ -519,7 +521,8 @@ body.dark-mode footer {
 /* =========================
    Dark Mode Toggle Button
    ========================= */
-#themeToggle {
+/* Styles the dark mode button used in Lab 5 */
+   #themeToggle {
     background-color: var(--secondary-color);
     color: white;
     border: none;
